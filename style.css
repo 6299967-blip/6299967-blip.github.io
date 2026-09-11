@@ -142,8 +142,8 @@ h2 {
 }
 
 .sidebar-img {
-  width: 100%;
-  max-width: 760px;
+  width: 50%;
+  max-width: 560px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   display: block;
@@ -324,3 +324,48 @@ nav h1 {
   color: #fff;
 }
 
+/* Portfolio styles*/
+.content h1 {
+  color: black;
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #444padding: 16px 20px;
+  front-size: 1.1rem;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 025s ease, transform 0.25s ease;
+}
+
+#portfolio a::after {
+  content: "->";
+  front-size: 0.85rem;
+  oppacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
+}
